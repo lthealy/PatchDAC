@@ -3,11 +3,12 @@ Direct inference of molecular subtype of PDAC samples from WSI
 
 # Quick Start
 In order to run, the script `runPDAC_multiarc.sh` requires three arguments in the following format:
+
 ``` bash runPDAC_multiarc.sh /PATH/TO/SVS/ /PATH/TO/INFERENCE_OUTPUT/ /PATCH/TO/PATCH_OUTPUT/ ```
 
 # Required data structure
-Argument 1: Directory containing SVS files
-Arguments 2 and 3: These are intermediate and output directories
+* Argument 1: Directory containing SVS files
+* Arguments 2 and 3: These are intermediate and output directories
 
 # Output structure
 ```
@@ -25,7 +26,7 @@ patch_output/
 ```
 - inference_feat.pickle contains what you will need for downstream predictions
 - the patient wise stacked clusters show representative images of each cluster type from each WSI. It is normal for many rows to be blank, as not all morphologies are present in all cases.
-- patchwise clister vit features can be used for patch level analyses (BETA)
+- patchwise cluster vit features can be used for patch level analyses (BETA)
   
 # Implementing prediction pipeline
 Once you have run the prediction pipeline on your dataset, run the .R file `fileNameHere.R` to generate a basal-like probability output
