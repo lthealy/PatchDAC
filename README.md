@@ -24,9 +24,9 @@ inference_output/cluster_dir
 patch_output/
 └── one folder per svs filled with one png per patch
 ```
-- inference_feat.pickle contains what you will need for downstream predictions
+- _**inference_feat.pickle**_ contains what you will need for downstream predictions. 
 - the patient wise stacked clusters show representative images of each cluster type from each WSI. It is normal for many rows to be blank, as not all morphologies are present in all cases.
 - patchwise cluster vit features can be used for patch level analyses (BETA)
   
-# Implementing prediction pipeline
-Once you have run the prediction pipeline on your dataset, run the .R file `fileNameHere.R` to generate a basal-like probability output
+# Implementing prediction pipeline (in development)
+Once you have run the prediction pipeline on your dataset, run the .R file `implementPipeline.R` to generate a basal-like probability output
