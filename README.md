@@ -6,9 +6,10 @@ In order to run, the script `runPDAC_multiarc.sh` requires three arguments in th
 
 ``` bash runPDAC_multiarc.sh /PATH/TO/SVS/ /PATH/TO/INFERENCE_OUTPUT/ /PATCH/TO/PATCH_OUTPUT/ ```
 
-# Required data structure
+# Required data structure and software
 * Argument 1: Directory containing SVS files
 * Arguments 2 and 3: These are intermediate and output directories
+* Requires either docker or singularity
 
 # Output structure
 ```
